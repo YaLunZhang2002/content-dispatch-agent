@@ -1,0 +1,15 @@
+# 示例：双平台独立文案分发任务 (头条 + 小红书)
+campaign: demo_campaign_2026
+workbook_path: examples/sample_pool.xlsx
+owner: 恒恒
+seq_start: 1
+count: 10
+same_copy_across_platforms: false
+target_chat: 文件传输助手
+blocks:
+  - platform: 今日头条
+    source_sheet: 今日头条
+    with_tags: false
+  - platform: 小红书
+    source_sheet: 小红书
+    with_tags: true

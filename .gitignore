@@ -1,0 +1,34 @@
+# Python cache & artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.ruff_cache/
+dist/
+build/
+*.egg-info/
+
+# Environment & Credentials (NEVER commit secrets)
+.env
+.env.local
+*.pem
+*.key
+
+# Business Data & Customer Specific Files (Strict Desensitization)
+*.xlsx
+*.xls
+!examples/*.xlsx
+!tests/*.xlsx
+q9m_art_output/
+output/
+*.log
+ledger.db
+ledger.db*
+ledger.db.json
+run_tests.py
+docs/
+
+# Operating system files
+.DS_Store
+Thumbs.db
